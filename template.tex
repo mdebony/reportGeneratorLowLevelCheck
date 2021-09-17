@@ -1,0 +1,55 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage[english]{babel}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ 
+\graphicspath{{%figurepath%}}
+
+\title{%title%}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{HESS observation information}
+\subsection{General information}
+\begin{itemize}
+	\item Alert Instrument : %alert_instrument%
+	\item Alert time : %altertime%
+	\item Start time : %startime%
+	\item Delay : %delay%
+	\item Duration : %duration%
+\end{itemize}
+
+\subsection{Runlist}
+\begin{itemize}
+%runlist%
+\end{itemize}
+
+\newpage
+
+\section{NSB map}
+
+%NSB%
+
+\newpage
+\section{Trigger rate}
+
+%trigger%
+
+\newpage
+\section{Calibration}
+
+%calibration%
+
+\end{document}
